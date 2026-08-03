@@ -60,36 +60,36 @@
       
             <h3>Human-Level-Mode setup rules</h3>
             <p>
-                •	A player can make no move.
-                •	A player can make an illegal move by relocating one of their own pawns onto a vacant square in the opponent’s half board, except the last rank. No illegal pawn promotion.
-                •	A player can remove one piece from the board, including his/her opponent’s piece, except the two kings.
-                •	A player can’t move the opponent’s pieces.
-                •	If a color sets up a fight-starting position to let the opponent choose a color, the opposite color automatically becomes the side to move in Fight Phase. For example, a tentative White player set up a fight-starting position to let tentative Black player choose a color. In the fight-starting position, the side to move must be Black.
-                •	If a player chooses a must-win color directly, the side to move in the position doesn’t change. For example, if a tentative White player chose a color directly, in the fight starting position the White side is to move.
-                •	All moves in Human-Level-Mode can’t break the forbidden rules.
-                •	Human-Level-Mode is enough for human players and engines. Rules of Human-Level-Mode can be refined if necessary. The goal is to maximize the good fight starting position options for most safe positions while minimize the number of legal setup move options.
+                •	A player can make no move. </p>
+                <p>•	A player can make an illegal move by relocating one of their own pawns onto a vacant square in the opponent’s half board, except the last rank. No illegal pawn promotion. </p>
+               <p> •	A player can remove one piece from the board, including his/her opponent’s piece, except the two kings. </p>
+                <p>•	A player can’t move the opponent’s pieces. </p>
+                <p>•	If a color sets up a fight-starting position to let the opponent choose a color, the opposite color automatically becomes the side to move in Fight Phase. For example, a tentative White player set up a fight-starting position to let tentative Black player choose a color. In the fight-starting position, the side to move must be Black. </p>
+                <p>•	If a player chooses a must-win color directly, the side to move in the position doesn’t change. For example, if a tentative White player chose a color directly, in the fight starting position the White side is to move. </p>
+               <p> •	All moves in Human-Level-Mode can’t break the forbidden rules. </p>
+               <p> •	Human-Level-Mode is enough for human players and engines. Rules of Human-Level-Mode can be refined if necessary. The goal is to maximize the good fight starting position options for most safe positions while minimize the number of legal setup move options.
 
             </p>
 
             <h3>Engine-Test-Mode setup rules</h3>
             <p>
-                •	All moves in Human-Level-Mode in 6.3.
-                •	A player can relocate a piece of any color to any square (either empty or occupied).
-                •	A bishop can’t be relocated to the opposite color square.
-                •	A player can set the side to move freely when setting up a fight-starting position.
-                •	A pawn can be promoted when relocated directly to the last rank.
-                •	All moves in Engine-Test-Mode can’t break the forbidden rules.
-                •	Engine-Test-Mode can create much more good fight-starting positions, compared to Human-Level-Mode. It is not suitable for human players.
+                •	All moves in Human-Level-Mode in 6.3. </p>
+                <p>•	A player can relocate a piece of any color to any square (either empty or occupied). </p>
+               <p> •	A bishop can’t be relocated to the opposite color square. </p>
+               <p> •	A player can set the side to move freely when setting up a fight-starting position. </p>
+               <p> •	A pawn can be promoted when relocated directly to the last rank. </p>
+               <p> •	All moves in Engine-Test-Mode can’t break the forbidden rules. </p>
+              <p>  •	Engine-Test-Mode can create much more good fight-starting positions, compared to Human-Level-Mode. It is not suitable for human players. </p>
 
             </p>
       
-                <h3>Forbidden moves</h3>
+                <h3>Forbidden setup moves</h3>
             <p>
-                •	Neither color can be checkmated.
-                •	The side to move can't be checking the opposite color.
-                •	Both kings can not be removed.
-                •	Illegal castling is not allowed.
-                •	Moving more than one piece is not allowed, except a legal castling.
+                •	Neither color can be checkmated. </p>
+               <p> •	The side to move can't be checking the opposite color. </p>
+               <p> •	Both kings can not be removed. </p>
+               <p> •	Illegal castling is not allowed. </p>
+               <p> •	Moving more than one piece is not allowed, except a legal castling. 
 
              </p>
       
@@ -97,12 +97,12 @@
 
              <h3>Notation Examples</h3>
             <p>
-                All moves are recorded using standard Algebraic Notation (SAN), except in Decision Phase. The notation system is designed to be redundant on purpose. It is clear and intuitive.
-                All notations in Decision Phase start with “CC”, which means “Cusp Chess”. The notation in the Decision Phase has two lines at most. If a player chooses a color directly, it has only one line. 
-                There are four different notations in the Decision Phase:
-                •	Move a piece. For example, in the notation “CC {WS c2h6 BWBN} {0.94}”, “WS c2h6” means tentative White player set up a fight-starting position by moving a piece from c2 to h6. “BW” means the Black color must win. “BN” means the Black color moves next. {0.94} is the position score for Black. That is why Black must win in the fight-starting position.
-                •	Remove a piece. For example, in the notation “CC {BS g2xx BWWN} {-1.02}”, “BS g2xx” means tentative White player set up a fight-starting position by removing a piece at g2 from the chess board. “BW” means the Black color must win, and “WN” means the White moves next. The position score of White is -1.02. The position score for Black is 1.02. So it is reasonable to set the condition that Black must win.
-                •	Choose a color when the opponent set up a fight-starting Position. For example, in the notation “CC {BCWD} {0.89}”, After tentative White player set up a fight-starting Position, “BCW” means tentative Black player chose White color. “WD” means that draw means win for White. The tentative Black player now is the White player, and draw is enough for him/her.
+                All moves are recorded using standard Algebraic Notation (SAN), except in Decision Phase. The notation system is designed to be redundant on purpose. It is clear and intuitive. </p>
+               <p> All notations in Decision Phase start with “CC”, which means “Cusp Chess”. The notation in the Decision Phase has two lines at most. If a player chooses a color directly, it has only one line.  </p>
+               <p> There are four different notations in the Decision Phase: </p>
+               <p> •	Move a piece. For example, in the notation “CC {WS c2h6 BWBN} {0.94}”, “WS c2h6” means tentative White player set up a fight-starting position by moving a piece from c2 to h6. “BW” means the Black color must win. “BN” means the Black color moves next. {0.94} is the position score for Black. That is why Black must win in the fight-starting position. </p>
+               <p> •	Remove a piece. For example, in the notation “CC {BS g2xx BWWN} {-1.02}”, “BS g2xx” means tentative White player set up a fight-starting position by removing a piece at g2 from the chess board. “BW” means the Black color must win, and “WN” means the White moves next. The position score of White is -1.02. The position score for Black is 1.02. So it is reasonable to set the condition that Black must win. </p>
+               <p> •	Choose a color when the opponent set up a fight-starting Position. For example, in the notation “CC {BCWD} {0.89}”, After tentative White player set up a fight-starting Position, “BCW” means tentative Black player chose White color. “WD” means that draw means win for White. The tentative Black player now is the White player, and draw is enough for him/her. </p>
                 •	Choose a color directly.  For example, in the notation “CC {BC none BWBN} {1.06}”, “BC” means tentative Black player chose a color directly. "none" means the player can't make a move when choosing a color directly. “BW” means the Black color must win. Here we know the tentative Black player can only choose Black color. His/her opponent will be the White. “BN” means the Black color moves next. Here tentative Black player think the win rate is over 50% because the score is 1.06, so they chose Black directly and try to win with the color.
 
          </p>
