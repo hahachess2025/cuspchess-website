@@ -38,18 +38,23 @@ figcaption {
   font-size: 0.9rem;
 }
 .image-container {
-  display: flex;       /* Aligns items horizontally */
-  gap: 16px;           /* Adds space between the images */
+  display: flex;       
+  gap: 16px;           
+  align-items: stretch; /* Forces both figure cards to be the exact same height */
 }
 
 .image-container figure {
-  flex: 1;             /* Makes both image containers equal width */
-  margin: 0;           /* Resets default browser spacing */
+  flex: 1;             
+  margin: 0;           
+  display: flex;        /* Turns the figure into a vertical column */
+  flex-direction: column;
+  justify-content: space-between; /* Pushes the image to the top and caption to the bottom */
 }
 
 .image-container img {
-  width: 100%;         /* Forces image to fit its container */
-  height: auto;        /* Maintains the original aspect ratio */
+  width: 100%;         
+  height: auto;        
+  display: block;       /* Removes unwanted white space under the image */
 }
 
 footer {
