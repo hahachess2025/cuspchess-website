@@ -81,7 +81,7 @@
             Now two colors are set. The two players must find the best moves. All standard chess rules apply, except draw means loss for the must-win color.
             </p> 
 
-             <h3>Score Lines Visulization in Three Phases </h3>   
+             <h3>Score-Line Visulization in Three Phases </h3>   
             <p>
                 300 hundred games were played between Stockfish 17.1 and Stockfish 17. If a game’s result was clear, the game was stop to reduce test time. The score lines in the Safe Move and Decision Phases are shown in Figure 6. The score lines are aligned as shown in Figure 7.
                 
@@ -99,6 +99,16 @@
                  <p>
                      Aligned score lines of the Safe Move and Decision Phases with following 27 moves in the Fight Phase are shown in Figure 8 (only Stockfish 17.1’s score lines in the Fight Phase). Aligned score lines of the 300 hundred games are shown in Figure 9(only Stockfish 17.1’s score lines in the Fight Phase). 
                  </p>
+              <div class="image-container">
+              <figure>
+                <img src="image/Aligned score lines of three phases.png" alt="Description of first image">
+                <figcaption>Aligned score lines of three phases</figcaption>
+              </figure>
+              <figure>
+                <img src="image/Aligned complete score lines of 300 games.png" alt="Description of second image">
+                <figcaption>Aligned complete score lines of 300 games</figcaption>
+              </figure>
+            </div>
                 
             <h3>Legal Setup Move</h3>
             <p>Legal setup move includes legal safe move and One-Free move. One-Free move is illegal in standard chess. It is designed to create more good fight-starting positions in Cusp Chess by relocating at most one piece. There are two modes for One-Free move in Cusp Chess: Human-Level-Mode and Engine-Test-Mode.
@@ -173,11 +183,18 @@
 
 
         <section id="results">
-            <h2>Result</h2>
+            <h2>Test Result</h2>
 
             <p>
-                No draw. No game pair. The game is fair. Every game is different. We can also fix the opening memorization problem.
+               Win rates of Stockfish 17.1 when matched against each of five different versions in 600 games are shown in Figure , 10 seconds per move. We can see Stockfish 17.1 is also better than older versions in Cusp Chess.
             </p>
+            
+             <figure>
+            <img src="image/Win rates of 17.1 when matched against other engines.png" style="width: 50%; height: auto;" 
+                 alt="Example game">
+                <figcaption>Win rates of 17.1 when matched against other engines in Cusp Chess.</figcaption>
+            </figure>   
+            
         </section>
         
         <section id="results">
