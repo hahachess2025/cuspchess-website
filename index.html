@@ -148,7 +148,7 @@
                <p> •	Moving more than one piece is not allowed, except a legal castling. 
 
              </p>
-      
+            
 
 
              <h3>Notation Examples</h3>
@@ -164,6 +164,45 @@
          </p>
         </section>
         
+        <section id="Terminology">
+            <h2>Terminology</h2>
+               <h3>Safe position</h3>
+            <p>
+                If win rates of both color of a position are below 50%, the position is a safe position. The previous player is safe, because their opponent can’t choose the must-win color directly to win easily. Based on popular chess engines, the score of a safe position ranges from -1 to +1. The relation between safe position and optimal setup position are shown in Figure 2.
+            </p>
+             <h3>Fight-starting position</h3>
+            <p>
+                It is the starting position in the Fight Phase. There is only one fight starting position in a game. A player can set up a fight starting position by a legal setup move. If a player chooses the must-win color directly in a position, the position is the fight starting position. Each player has the right to set up a fight-starting position. However, this right can only be exercised once per game total. It is tentative White player’s responsibility to set it up. if no one did it, draw means loss for the tentative White player.
+            </p>
+             <h3>Cusp position or optimal setup position</h3>
+            <p>
+                A cusp position’s score is either around -1 or +1. They are optimal setup positions for fight-starting positions. The name of “cusp position” is from the evaluation function of typical chess engines as shown in Figure 3 and Figure 4.
+            </p>
+             <h3>Legal move</h3>
+            <p>
+                In Cusp Chess, there are three types of legal moves for three phases respectively: legal safe moves, legal setup moves, and legal fight moves. The legal safe move and legal fight move are the same as legal moves in standard chess. Legal setup move includes legal safe move and One-Free move. All the moves in Safe Move and Decision Phases are shown in Figure 5.
+            </p>
+             <h3>Optimal safe move</h3>
+            <p>
+                They are legal safe moves that can create safe positions in the Safe Move Phase. Usually there are multiple optimal safe move options for each position.
+            </p>
+             <h3>Setup move</h3>
+            <p>
+                A legal move in Decision Phase is a set up move. It is used to set up a fight-starting position. 
+            </p>
+             <h3>Optimal setup move</h3>
+            <p>
+                An optimal setup move can create an optimal setup position.
+            </p>
+            <h3>One-Free move</h3>
+            <p>
+                All moves that are illegal in standard chess designed to set up fight starting positions are One-Free move. They are legal setup moves but not legal safe moves. There are two modes of One-Free move: Human-Level-Mode and Engine-Test-Mode. Human-level-Mode can create sufficient good fight-starting positions while won’t overwhelm human players. Engine-Test-Mode can create much more good fight-starting positions, but not suitable for human players. 
+            </p>
+            <h3>Direct-choice move</h3>
+            <p>
+                A player can choose a color directly after their opponent’s safe move. But they can’t make a move before the selection and can only choose the must-win color. They also can’t set the side to move. Direct-choice move can be seen as a special setup move in the Decision Phase.
+            </p>
+         </section>
         <section id="examples">
             <h2>A Good Fight-Starting Position Example</h2>
             
@@ -198,10 +237,11 @@
         
         <section id="results">
             <h2>Reference</h2>
-            <p> For more information about Freestyle Player-Balancing; check my 26-page preprint paper, Freestyle Player-Balancing: A Novel Flexible Framework for Addressing Game Balance and Opening Memorization in Decisive, Two-Player, Perfect-Information, Turn-Based Games. link, https://zenodo.org/records/21687566
+            <p> For more information about Freestyle Player-Balancing; check my 26-page preprint paper. Freestyle Player-Balancing: A Novel Flexible Framework for Addressing Game Balance and Opening Memorization in Decisive, Two-Player, Perfect-Information, Turn-Based Games. link, https://zenodo.org/records/21687566
             </p>
             
                 <p>Cusp Chess Open Source Project on GitHub <a href="https://github.com/hahachess2025/cuspchess"> Cusp Chess Open Source Project</a>.</p>
+                <p>Cusp Xiangqi Open Source Project on GitHub <a href="https://github.com/hahachess2025/cuspxiangqi"> Cusp Xiangqi Open Source Project</a>.</p>
             </p> 
             
         </section>
