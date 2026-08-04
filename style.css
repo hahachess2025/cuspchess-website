@@ -6,28 +6,36 @@ body {
     line-height: 1.6;
 }
 
-/* 1. 外层容器：让里面的内容上下排列，并且居中 */
+/* 1. 外层容器：上下排列 + 水平居中 */
 .header-container {
     display: flex;
-    flex-direction: column; /* 关键：强制让子元素上下垂直排列 */
-    align-items: center;    /* 关键：让图标和文字水平居中对齐 */
-    padding: 20px 0;        /* 顶部导航栏的上下内边距 */
+    flex-direction: column; /* 子元素上下垂直排列 */
+    align-items: center;    /* 子元素整体水平居中 */
+    text-align: center;     /* 确保多行文本内容也水平居中 */
+    padding: 20px 0;        /* 内边距 */
 }
 
-/* 2. 控制上方图标的大小 */
+/* 2. 控制上方图标 */
 .top-logo {
-    width: 100px;            /* 在这里直接修改图标的宽度（比如 60px, 100px），高度会自动等比例缩放 */
-    height: auto;           /* 保持图标比例，防止变形 */
-    display: block;         /* 转为块级元素，消除底部自带的空隙 */
+    width: 100px;           /* 控制图标宽度 */
+    height: auto;           /* 保持等比例缩放 */
+    display: block;          /* 消除块级间隙 */
 }
 
-/* 3. 控制下方标题的样式以及与图标的距离 */
+/* 3. 主标题样式 */
 .site-title {
-    font-size: 60px;        /* 标题文字大小 */
-    margin-top: 10px;       /* 关键：控制文字和上方图标的距离！数字越小，离得越近 */
-    color: #333;            /* 文字颜色 */
+    font-size: 60px;
+    margin-top: 10px;       /* 与上方图标的间距 */
+    margin-bottom: 5px;     /* 重置下边距，防止与下方段落间距过大 */
+    color: #333;
 }
 
+/* 4. 副标题样式 */
+.site-subtitle {
+    margin: 0;              /* 清理段落默认的外边距 */
+    color: #666;            /* 使用略浅的颜色区分层级 */
+    font-size: 16px;
+}
 
 h1 {
     font-size: 42px;
