@@ -11,6 +11,29 @@ header {
     padding: 40px 0;
 }
 
+/* 1. 外层容器：让里面的内容上下排列，并且居中 */
+.header-container {
+    display: flex;
+    flex-direction: column; /* 关键：强制让子元素上下垂直排列 */
+    align-items: center;    /* 关键：让图标和文字水平居中对齐 */
+    padding: 20px 0;        /* 顶部导航栏的上下内边距 */
+}
+
+/* 2. 控制上方图标的大小 */
+.top-logo {
+    width: 80px;            /* 在这里直接修改图标的宽度（比如 60px, 100px），高度会自动等比例缩放 */
+    height: auto;           /* 保持图标比例，防止变形 */
+    display: block;         /* 转为块级元素，消除底部自带的空隙 */
+}
+
+/* 3. 控制下方标题的样式以及与图标的距离 */
+.site-title {
+    font-size: 24px;        /* 标题文字大小 */
+    margin-top: 10px;       /* 关键：控制文字和上方图标的距离！数字越小，离得越近 */
+    color: #333;            /* 文字颜色 */
+}
+
+
 h1 {
     font-size: 42px;
 }
