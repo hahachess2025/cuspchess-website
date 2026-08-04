@@ -50,17 +50,49 @@
                <p> Standard chess pieces for each player.
             </p>
 
+            <figure>
             <img src="image/board-start.png" style="width: 50%; height: auto;" 
                  alt="Starting position">
-       
+                <figcaption>This is your image caption text.</figcaption>
+            </figure>
+            
                 <h3>Gameplay Overview</h3>
             <p>
                 Cusp Chess usually has three phases: Safe Move Phase, Decision Phase and Fight Phase. The first two phases are not to restrict players’ moves. On the contrary, they are determined by players’ moves in games. When a player makes a safe move, the game is in the Safe Move Phase. When a player decides to set up a fight-starting position, the game goes into the Decision Phase. After two colors are assigned to two players, the game enters the Fight Phase. 
-          </p> <p>Legal setup move includes legal safe move and One-Free move. One-Free move is illegal in standard chess. It is designed to create more good fight-starting positions in Cusp Chess by relocating at most one piece. There are two modes for One-Free move in Cusp Chess: Human-Level-Mode and Engine-Test-Mode.
+          </p> 
+            <h3>Safe Move Phase</h3>
+            <p>
+            When a player makes a legal safe move, they need to specify whether they want to set up a fight-starting position or not, because a legal safe move is also a legal setup move.
+            </p>  <p> If a player doesn’t want to set up a fight-starting position now, they need to make an optimal safe move to make the position balanced: -1 < position score < 1. If a player didn’t make an optimal safe move and didn’t set up a fight starting position, it is possible their opponent will choose the advantaged color directly because now the position is unbalanced and the advantaged color can win.
+            
+                                                                                                                                                                     </p>  <p>If a player is checked, the player can either resolve the check, or make a setup move, or choose a must-win color directly.
+            
+            </p>  <p> It is possible that no Safe Move Phase in a game. At the first move, a tentative White player can choose a color directly or set up a fight-starting position and let his/her opponent to choose a color.
+
+            </p> 
+            <h3>Decision Phase</h3>
+            <p>
+            A player can choose a color directly on their turn, if they didn’t make a move. But they must choose the must-win color. Then their opponent is assigned to the opposite color automatically. Then the game goes into Fight Phase.
+            </p>  <p> A player can set up a fight-starting position by a legal setup move on their turn. When a player sets up a fight-starting position, the color-to-move and must-win color must also be specified. Then, his/her opponent must choose a color, which can be the must-win color or the opposite color. After a player chose a color, the opponent’s color is fixed too. The game goes into Fight Phase.
+
+            </p> 
+            <h3>Fight Phase</h3>
+            <p>
+            Now two colors are set. The two players must find the best moves. All standard chess rules apply, except draw means loss for the must-win color.
+            </p> 
+
+             <h3>Score Lines Visulization in Three Phases </h3>   
+            <p>
+                300 hundred games were played between Stockfish 17.1 and Stockfish 17. If a game’s result was clear, the game was stop to reduce test time. The score lines in the Safe Move and Decision Phases are shown in Figure 6. The score lines are aligned as shown in Figure 7.
+                
+             </p>
+                
+            <h3>Legal Setup Move</h3>
+            <p>Legal setup move includes legal safe move and One-Free move. One-Free move is illegal in standard chess. It is designed to create more good fight-starting positions in Cusp Chess by relocating at most one piece. There are two modes for One-Free move in Cusp Chess: Human-Level-Mode and Engine-Test-Mode.
             
             </p>
       
-            <h3>Human-Level-Mode setup rules</h3>
+            <h3>Human-Level-Mode Setup Rules</h3>
             <p>
                 •	A player can make no move. </p>
                 <p>•	A player can make an illegal move by relocating one of their own pawns onto a vacant square in the opponent’s half board, except the last rank. No illegal pawn promotion. </p>
@@ -73,7 +105,7 @@
 
             </p>
 
-            <h3>Engine-Test-Mode setup rules</h3>
+            <h3>Engine-Test-Mode Setup Rules</h3>
             <p>
                 •	All moves in Human-Level-Mode in 6.3. </p>
                 <p>•	A player can relocate a piece of any color to any square (either empty or occupied). </p>
@@ -85,7 +117,7 @@
 
             </p>
       
-                <h3>Forbidden setup moves</h3>
+                <h3>Forbidden Setup Rules</h3>
             <p>
                 •	Neither color can be checkmated. </p>
                <p> •	The side to move can't be checking the opposite color. </p>
@@ -123,7 +155,7 @@
 
 
         <section id="results">
-            <h2>Results</h2>
+            <h2>Result</h2>
 
             <p>
                 No draw. No game pair. The game is fair. Every game is different. We can also fix the opening memorization problem.
