@@ -57,6 +57,12 @@ figcaption {
   display: block;       /* Removes unwanted white space under the image */
 }
 
+#website-logo {
+  height: 50px;       /* Constrains the height strictly */
+  width: auto;        /* Maintains the original proportions */
+  display: block;
+}
+
 footer {
     text-align: center;
     margin-top: 60px;
