@@ -28,16 +28,16 @@
             <p>
                 Cusp Chess is a decisive chess variant based on Freestyle Player-Balancing (FSPB). 
                 This variant aims to eliminate draws. By giving a color an edge, the color must win and draw means loss for it. 
-                Then all other standard chess rules apply. As we can see, there are two cusp positions in evaluation curve of chess engines.
+                Then all other standard chess rules apply. As we can see, there are two cusp positions in evaluation curve of chess engines in Figure 2.
             </p>
              <div class="image-container">
               <figure>
                 <img src="image/evaluation curve full.PNG" alt="Description of first image">
-                <figcaption>Evaluation curves of a typical chess engine</figcaption>
+                <figcaption>Fig. 1. Evaluation curves of a typical chess engine</figcaption>
               </figure>
               <figure>
                 <img src="image/evaluation curve half.PNG" alt="Description of second image">
-                <figcaption>Two cusp positions in the evaluation curve</figcaption>
+                <figcaption>Fig. 2. Two cusp positions in the evaluation curve</figcaption>
               </figure>
             </div>
         </section>
@@ -74,7 +74,7 @@
             <figure>
             <img src="image/board-start.png" style="width: 50%; height: auto;" 
                  alt="Starting position">
-                <figcaption>Starting position of Cusp Chess (White to move).</figcaption>
+                <figcaption>Fig. 3. Starting position of Cusp Chess (White to move).</figcaption>
             </figure>
             <h3>Objective</h3>
             <p>
@@ -87,25 +87,25 @@
              <h3>Gameplay Overview</h3>
                            
             <p>
-                Cusp Chess usually has three phases: Safe Move Phase, Decision Phase and Fight Phase. The simplified flowchart is shown in Figure 2.
+                Cusp Chess usually has three phases: Safe Move Phase, Decision Phase and Fight Phase. The simplified flowchart is shown in Figure 4.
                <p> 
              <figure>
             <img src="image/The flowchart of FSPB.png" style="width: 100%; height: auto;" 
                  alt="Starting position">
-                <figcaption>The simplified flowchart of Cusp Chess.</figcaption>
+                <figcaption>Fig. 4. The simplified flowchart of Cusp Chess.</figcaption>
             </figure>
                    
                </p> The first two phases are not to restrict players’ moves. 
                 On the contrary, they are determined by players’ moves in games. 
                 When a player makes a safe move, the game is in the Safe Move Phase. 
                 When a player decides to set up a fight-starting position, the game goes into the Decision Phase. 
-                After two colors are assigned to two players, the game enters the Fight Phase. The flowchart is shown in Figure 3.
+                After two colors are assigned to two players, the game enters the Fight Phase. The flowchart is shown in Figure 5.
           </p> 
             
              <figure>
             <img src="image/Detailed flowchart of Cusp Chess.png" style="width: 100%; height: auto;" 
                  alt="Starting position">
-                <figcaption>The detailed flowchart of Cusp Chess.</figcaption>
+                <figcaption>Fig. 5. The detailed flowchart of Cusp Chess.</figcaption>
             </figure>
             
             <h3>Safe Move Phase</h3>
@@ -142,30 +142,32 @@
 
              <h3>Score-Line Visulization in Three Phases </h3>   
             <p>
-                300 hundred games were played between Stockfish 17.1 and Stockfish 17. If a game’s result was clear, the game was stop to reduce test time. The score lines in the Safe Move and Decision Phases are shown in Figure 6. The score lines are aligned as shown in Figure 7.
+                300 hundred games were played between Stockfish 17.1 and Stockfish 17. If a game’s result was clear, 
+                the game was stop to reduce test time. The score lines in the Safe Move and Decision Phases are shown in Figure 6. The score lines are aligned as shown in Figure 7.
                 
              </p>
                 <div class="image-container">
               <figure>
                 <img src="image/Score lines in Safe Move and Decision Phases.png" alt="Description of first image">
-                <figcaption>Score lines in Safe Move and Decision Phases</figcaption>
+                <figcaption>Fig. 6. Score lines in Safe Move and Decision Phases</figcaption>
               </figure>
               <figure>
                 <img src="image/Aligned score lines in Safe Move and Decision Phases.png" alt="Description of second image">
-                <figcaption>Aligned score lines in Safe Move and Decision Phases</figcaption>
+                <figcaption>Fig. 7. Aligned score lines in Safe Move and Decision Phases</figcaption>
               </figure>
             </div>
                  <p>
-                     Aligned score lines of the Safe Move and Decision Phases with following 27 moves in the Fight Phase are shown in Figure 8 (only Stockfish 17.1’s score lines in the Fight Phase). Aligned score lines of the 300 hundred games are shown in Figure 9(only Stockfish 17.1’s score lines in the Fight Phase). 
+                     Aligned score lines of the Safe Move and Decision Phases with following 27 moves in the Fight Phase are shown in Figure 8 (only Stockfish 17.1’s score lines in the Fight Phase). 
+                     Aligned score lines of the 300 hundred games are shown in Figure 9 (only Stockfish 17.1’s score lines in the Fight Phase). 
                  </p>
               <div class="image-container">
               <figure>
                 <img src="image/Aligned score lines of three phases.png" alt="Description of first image">
-                <figcaption>Aligned score lines of three phases</figcaption>
+                <figcaption>Fig. 8. Aligned score lines of three phases</figcaption>
               </figure>
               <figure>
                 <img src="image/Aligned complete score lines of 300 games.png" alt="Description of second image">
-                <figcaption>Aligned complete score lines of 300 games</figcaption>
+                <figcaption>Fig. 9. Aligned complete score lines of 300 games</figcaption>
               </figure>
             </div>
                 
@@ -231,12 +233,12 @@
                 If win rates of both color of a position are below 50%, the position is a safe position. 
                 The previous player is safe, because their opponent can’t choose the must-win color directly to win easily. 
                 Based on popular chess engines, the score of a safe position ranges from -1 to +1. 
-                The relation between safe position and optimal setup position are shown in Figure 2.
+                The relation between safe position and optimal setup position are shown in Figure 10.
             </p>
             <figure>
             <img src="image/3 positions.png" style="width: 50%; height: auto;" 
                  alt="Three positions in Cusp Chess">
-                <figcaption>Three positions in Cusp Chess.</figcaption>
+                <figcaption>Fig. 10. Three positions in Cusp Chess.</figcaption>
             </figure>
             
              <h3>Fight-starting position</h3>
@@ -250,7 +252,7 @@
             </p>
              <h3>Cusp position or optimal setup position</h3>
             <p>
-                A cusp position’s score is either around -1 or +1. They are optimal setup positions for fight-starting positions. The name of “cusp position” is from the evaluation function of typical chess engines as shown in Figure 3 and Figure 4.
+                A cusp position’s score is either around -1 or +1. They are optimal setup positions for fight-starting positions. The name of “cusp position” is from the evaluation function of typical chess engines as shown in Figure 2.
             </p>
              <h3>Legal move</h3>
             <p>
@@ -259,7 +261,7 @@
             <figure>
             <img src="image/legal moves.png" style="width: 50%; height: auto;" 
                  alt="Legal moves in the Safe Move and Decision Phases in Cusp Chess">
-                <figcaption>Legal moves in the Safe Move and Decision Phases in Cusp Chess.</figcaption>
+                <figcaption>Fig. 11. Legal moves in the Safe Move and Decision Phases in Cusp Chess.</figcaption>
             </figure>
              <h3>Optimal safe move</h3>
             <p>
@@ -286,14 +288,14 @@
             <h2>A Good Fight-Starting Position Example</h2>
             
             <p>
-                CC {WS f2a6 BWBN} {1.03}. Tentative White player set up a fight-starting position by relocating the f-pawn onto a6. Now the position score is 1.03 for Black. Black must win and Black side to move.
+                CC {WS f2a6 BWBN} {1.03}. As shown in Figure 12, Tentative White player set up a fight-starting position by relocating the f-pawn onto a6. Now the position score is 1.03 for Black. Black must win and Black side to move.
             </p>
 
             
             <figure>
             <img src="image/example-game.png" style="width: 50%; height: auto;" 
                  alt="Example game">
-                <figcaption>A good fight-starting position in Cusp Chess (Black to move).</figcaption>
+                <figcaption>Fig. 12. A good fight-starting position in Cusp Chess (Black to move).</figcaption>
             </figure>
             
         </section>
@@ -303,13 +305,13 @@
             <h2>Test Result</h2>
 
             <p>
-               Win rates of Stockfish 17.1 when matched against each of five different versions in 600 games are shown in Figure , 10 seconds per move. We can see Stockfish 17.1 is also better than older versions in Cusp Chess.
+               Win rates of Stockfish 17.1 when matched against each of five different versions in 600 games are shown in Figure 13, 10 seconds per move. We can see Stockfish 17.1 is also better than older versions in Cusp Chess.
             </p>
             
              <figure>
             <img src="image/Win rates of 17.1 when matched against other engines.png" style="width: 80%; height: auto;" 
                  alt="Example game">
-                <figcaption>Win rates of Stockfish 17.1 when matched against other engines in Cusp Chess.</figcaption>
+                <figcaption>Fig. 13. Win rates of Stockfish 17.1 when matched against other engines in Cusp Chess.</figcaption>
             </figure>   
             
         </section>
