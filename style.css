@@ -37,6 +37,20 @@ figcaption {
   color: #555555;
   font-size: 0.9rem;
 }
+.image-container {
+  display: flex;       /* Aligns items horizontally */
+  gap: 16px;           /* Adds space between the images */
+}
+
+.image-container figure {
+  flex: 1;             /* Makes both image containers equal width */
+  margin: 0;           /* Resets default browser spacing */
+}
+
+.image-container img {
+  width: 100%;         /* Forces image to fit its container */
+  height: auto;        /* Maintains the original aspect ratio */
+}
 
 footer {
     text-align: center;
