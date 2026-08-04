@@ -27,7 +27,9 @@
             <h2>Introduction</h2>
 
             <p>
-                Cusp Chess is a decisive chess variant based on Freestyle Player-Balancing (FSPB). This variant aims to eliminate draws. By giving a color an edge, the color must win and draw means loss for it. Then all other standard chess rules apply.
+                Cusp Chess is a decisive chess variant based on Freestyle Player-Balancing (FSPB). 
+                This variant aims to eliminate draws. By giving a color an edge, the color must win and draw means loss for it. 
+                Then all other standard chess rules apply.
             </p>
         </section>
 
@@ -36,7 +38,15 @@
             <h2>The Idea</h2>
 
             <p>
-                Only the pie rule is not fair enough for decisive games, because of opening preparation and forceful setup.  If there are only a few ways to cut a pie, it is not fair for the first player. If there are too many ways to cut a pie, it is not fair for the second player. It is impossible to determine a perfect number of the options. And It is always unfair to force players to set up fight-starting position candidates, especially when they are uncomfortable about the choices available. The framework FSPB adds a safe move phase before the pie rule to fix the problem. There are only a few choices at each move, but there can be many moves before a player sets up a fight-starting position. Because of the expontional growth, it is impossible to prepare for all positions.  Because palyers will only set up fight-starting positions when they want to, Cusp Chess is fair for both of them.  
+                Only the pie rule is not fair enough for decisive games, because of opening preparation and forceful setup.  
+                If there are only a few ways to cut a pie, it is not fair for the first player. 
+                If there are too many ways to cut a pie, it is not fair for the second player. 
+                It is impossible to determine a perfect number of the options. 
+                And It is always unfair to force players to set up fight-starting position candidates, especially when they are uncomfortable about the choices available. 
+                The framework FSPB adds a safe move phase before the pie rule to fix the problem. 
+                There are only a few choices at each move, but there can be many moves before a player sets up a fight-starting position. 
+                Because of the expontional growth, it is impossible to prepare for all positions.  
+                Because players will only set up fight-starting positions when they want to, Cusp Chess is fair for both of them.  
         </section>
 
 
@@ -60,22 +70,38 @@
             
                 <h3>Gameplay Overview</h3>
             <p>
-                Cusp Chess usually has three phases: Safe Move Phase, Decision Phase and Fight Phase. The first two phases are not to restrict players’ moves. On the contrary, they are determined by players’ moves in games. When a player makes a safe move, the game is in the Safe Move Phase. When a player decides to set up a fight-starting position, the game goes into the Decision Phase. After two colors are assigned to two players, the game enters the Fight Phase. 
+                Cusp Chess usually has three phases: Safe Move Phase, Decision Phase and Fight Phase. 
+                The first two phases are not to restrict players’ moves. 
+                On the contrary, they are determined by players’ moves in games. 
+                When a player makes a safe move, the game is in the Safe Move Phase. 
+                When a player decides to set up a fight-starting position, the game goes into the Decision Phase. 
+                After two colors are assigned to two players, the game enters the Fight Phase. 
           </p> 
             <h3>Safe Move Phase</h3>
             <p>
             When a player makes a legal safe move, they need to specify whether they want to set up a fight-starting position or not, because a legal safe move is also a legal setup move.
-            </p>  <p> If a player doesn’t want to set up a fight-starting position now, they need to make an optimal safe move to make the position balanced: -1 < position score < 1. If a player didn’t make an optimal safe move and didn’t set up a fight starting position, it is possible their opponent will choose the advantaged color directly because now the position is unbalanced and the advantaged color can win.
+            </p>  
+            <p> If a player doesn’t want to set up a fight-starting position now, they need to make an optimal safe move to make the position balanced: -1 < position score < 1. 
+               If a player didn’t make an optimal safe move and didn’t set up a fight starting position, 
+               it is possible their opponent will choose the advantaged color directly because now the position is unbalanced and the advantaged color can win.
             
-                                                                                                                                                                     </p>  <p>If a player is checked, the player can either resolve the check, or make a setup move, or choose a must-win color directly.
+                </p> 
+                <p>If a player is checked, the player can either resolve the check, or make a setup move, or choose a must-win color directly.
             
-            </p>  <p> It is possible that no Safe Move Phase in a game. At the first move, a tentative White player can choose a color directly or set up a fight-starting position and let his/her opponent to choose a color.
+            </p>  
+                <p> It is possible that no Safe Move Phase in a game. At the first move, a tentative White player can choose a color directly 
+                    or set up a fight-starting position and let their opponent choose a color.
 
             </p> 
             <h3>Decision Phase</h3>
             <p>
-            A player can choose a color directly on their turn, if they didn’t make a move. But they must choose the must-win color. Then their opponent is assigned to the opposite color automatically. Then the game goes into Fight Phase.
-            </p>  <p> A player can set up a fight-starting position by a legal setup move on their turn. When a player sets up a fight-starting position, the color-to-move and must-win color must also be specified. Then, his/her opponent must choose a color, which can be the must-win color or the opposite color. After a player chose a color, the opponent’s color is fixed too. The game goes into Fight Phase.
+            A player can choose a color directly on their turn, if they didn’t make a move. 
+            But they must choose the must-win color. Then their opponent is assigned to the opposite color automatically. Then the game goes into Fight Phase.
+            </p>  
+                <p> A player can set up a fight-starting position by a legal setup move on their turn. 
+                    When a player sets up a fight-starting position, the color-to-move and must-win color must also be specified. 
+                    Then his/her opponent must choose a color, which can be the must-win color or the opposite color. 
+                    After a player chose a color, the opponent’s color is fixed too. The game goes into Fight Phase.
 
             </p> 
             <h3>Fight Phase</h3>
@@ -238,8 +264,19 @@
             
         </section>
         
+        <section id="Where to play Cusp Chess">
+        <h2>Where to play Cusp Chess</h2>
+          <p>
+            Now you can play Cusp Chess on you computuer with Cusp Chess GUI. The GUI is developed in Python and is available on GitHub. <a href="https://github.com/hahachess2025/cuspchess"> Cusp Chess Open Source Project</a>.
+            You can play against standard chess engines, or just let engines to play against each other.
+          </p>
+        </section>
+        
         <section id="results">
             <h2>Reference</h2>
+            <a href="Documents/Cusp Chess Rulebook version 0.1.pdf" download="Cusp Chess Rulebook.pdf">
+              Download Cusp Chess Rulebook.pdf
+            </a>
             <p> For more information about Freestyle Player-Balancing; check my 26-page preprint paper. Freestyle Player-Balancing: A Novel Flexible Framework for Addressing Game Balance and Opening Memorization in Decisive, Two-Player, Perfect-Information, Turn-Based Games. DOI:10.5281/zenodo.21687566. <a href="https://zenodo.org/records/21687566"> Freestyle Player-Balancing </a>
             </p>
             
