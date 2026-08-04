@@ -17,7 +17,7 @@ body {
 
 /* 2. 控制上方图标 */
 .top-logo {
-    width: 100px;           /* 控制图标宽度 */
+    width: 200px;           /* 控制图标宽度 */
     height: auto;           /* 保持等比例缩放 */
     display: block;          /* 消除块级间隙 */
 }
